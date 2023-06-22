@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css2family=solway:wght@700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'solway' ,serif;
+    font-weight: 700;
+}
+main{
+    width: 100%;
+    height: fit-content;
+    color: white;
+
+}
+body{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAElBMVEUUHz0OJUkSIkgVHjoPJEkNJ1Tf1u5KAAABdElEQVR4nO3QwQ2AMBDAsKOU/VdmheaFkOwJosxwan0d8CdmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFa25Orbk4svd6XorDBgdFvMteAAAAAElFTkSuQmCC);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    width: 100%;
+    height: 9vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c538efd;
+    position: fixed;
+    top: 0;
+}
+
+#App_Name{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#App_Name span{
+    font-size: 20px;
+    font-weight: 800;
+    color: orange;
+}
+
+.App_Icon{
+    width: 40px;
+
+}
+
+form{
+    margin: 5cm auto 0em auto;
+    width: 70%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1cm;
+}
+
+.Search_Field{
+width: 50%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+#Search_Place{
+    width: 100%;
+    padding: 0.8cm;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+#Search_Place:focus{
+    outline: none;
+}
+
+#ErrorMsg{
+    text-transform: capitalize;
+    font-weight: 400;
+    background-color: red;
+    font-size: 12px;
+    font-style: italic;
+    padding: 0.8cm;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    opacity: 0;
+    word-spacing: 5px;
+}
+
+#SearchButton{
+    width: 15%;
+    padding: 0.8cm;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+
+}
+
+#SearchButton:hover{
+    cursor: pointer;
+    background-color: rgba(15 10 63 0);
+
+}
+
+.Weather_Container{
+    margin: 1cm 0cm;
+    width: 100%;
+    height: 90vh;
+    padding: 0.5cm 1cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5cm;
+}
+
+.CurrentWeather_Container{
+    box-shadow: rgba(0,0,0,0.02) 0px 1px 3px 0px, rgba(27 31 35 0.15) 0px 0px 0px 1px;
+    width: 30%;
+    height: 100%;
+    background-color: #1c538e79;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.CurrentWeather_Container .CurrentWeather{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1cm;
+    text-align: center;
+}
+
+.CurrentWeather_Container .CurrentWeather .DateTime_Container{
+    border-bottom: 2px solid white;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0cm 0.8cm;
+}
+
+#Place_Name{
+    width: 80%;
+    padding: 0.5cm;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.281);
+
+}
+
+.Weather-Details{
+    width: 95%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1cm;
+    padding: 0.5cm;
+}
+
+.Weather_Item{
+    background-color: rgba(128, 128, 128, 0.281);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.2cm;
+
+}
+
+.Weather_Item p{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#WeatherConditionBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h5{
+    font-size: 12px;
+    box-shadow: rgba(0,0,0,0.02) 0px 1px 3px 0px, rgba(27 31 35 0.15) 0px 0px 0px 1px;
+    background-color: hsla(211, 63%, 33%, 0.267);
+    width: 70%;
+    height: 100%;
+}
+
+.Weatherforecast_Container .WeatherForeCast{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    padding: 0.5cm;
+    gap: 0.5cm;
+
+}
+
+.WeatherForeCast .ForeCastItem{
+    background-color: rgba(128, 128, 128, 0.116);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.WeatherForeCast .ForeCastItem:hover{
+    transform: scale(0.95);
+}
+
+
+.ForeCastItem .ForeCastItem-Details{
+    width: 100%;
+    height: 90%;
+    padding: 0.5cm;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2cm;
+}
+
+
+.ForeCastItem .ForeCastItem-Deatils p, .ConditionBox{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    flex-direction: column;
+    padding: 1cm 0cm;
+    gap: 0.4cm;
+    background-color: rgba(249, 246, 252, 0.144);
+}
+
+.ForeCastItem .ForeCastItem-Deatils .ConditionBox p{
+    background-color: transparent;
+}
+
+
+.WeatherForeCastItem .ForeCastItem .ForeCastItem-Deatils .ConditionBox img{
+    width: 50px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3cm;
+    background-color: #231c38;
+    padding: 0.5cm;
+}
+
+footer .App-Logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0cm;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0cm;
+}
+
+footer .DesignerInfo{
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0cm;
+}
+
+footer .DesignerInfo #Name{
+    color: orange;
+    font-size: 20px;
+}
+
+
+
+
